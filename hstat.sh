@@ -17,6 +17,18 @@ history \
 # TODO put monthly reports to a tar archive in $backdir
 #tar -rf monthly_bash_hstats.tar
 #m_statname="$(echo ${USER^}"$(date +'%Y-%m-%d')").stat"
+# TODO compression, for error
+
+#tar -cf - ./* | ( cd "${DIR}" && tar -xf - )
+#return_codes=( "${PIPESTATUS[@]}" )
+#if (( return_codes[0] != 0 )); then
+#  next_command
+#fi
+#if (( return_codes[1] != 0 )); then
+#  next_command
+#fi
+
+
 
 #TODO error handler
 #err() {
