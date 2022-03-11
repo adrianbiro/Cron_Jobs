@@ -1,0 +1,11 @@
+[Unit]
+Description=Person history statistics
+Wants=hstat.timer
+
+[Service]
+Type=simple
+ExecStart=sh hstat.sh
+User=adrian
+
+[Install]
+WantedBy=default.target

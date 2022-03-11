@@ -7,6 +7,8 @@
 # Since pipes create a subshell, it is necessary to source this script, like this . hstat
 #history | awk 'BEGIN {FS="[ \t]+|\\|"} {print $3}' | sort | uniq -c | sort -nr | head
 
+local HISTTIMEFORMAT=""
+
 history \
   | awk 'BEGIN {FS="[ \t]+|\\|"} {print $3}' \
   | sort \

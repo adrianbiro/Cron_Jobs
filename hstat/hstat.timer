@@ -1,0 +1,10 @@
+[Unit]
+Description=Person bash history statistics
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+Unit=hstat.service
+
+[Install]
+WantedBy=timers.target
