@@ -1,0 +1,10 @@
+[Unit]
+Description=Timeshift usage
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+Unit=timeshift_usage.service
+
+[Install]
+WantedBy=timers.target

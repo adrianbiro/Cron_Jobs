@@ -1,0 +1,11 @@
+[Unit]
+Description=Timeshift usage
+Wants=timeshift_usage.timer
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/adrian/gits/Cron_Jobs/timeshift_usage/timeshift_usage.py
+User=adrian
+
+[Install]
+WantedBy=default.target
